@@ -93,6 +93,15 @@ def check():
             number = number1
     checkMath(number)
 
+def roll():
+    dice_number = input('amount of dice to roll: ')
+    dice_number = int(dice_number)
+    max_number = input('maximum number you want to roll- ex: a six sided dice = 6: ')
+    max_number = int(max_number)
+    for x in range(dice_number):
+        print random.randint(1,max_number)
+    clearMode("What would you like to do?")
+
 mode("What would you like to do?")
 
 # stuff used
