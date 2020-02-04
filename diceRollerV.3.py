@@ -13,6 +13,8 @@ def mode(prompt, retries=4, reminder='ERROR: Invalid input. Please try again'):
             clearMode("What would you like to do?")
         if In in ('ch', 'Ch', 'check', 'Check'):
             check()
+        if In in ('R', 'r', 'Roll', 'roll'):
+            roll()
         retries = retries - 1
         if retries < 0:
             raise ValueError('invalid user response')
